@@ -8,6 +8,15 @@ import datetime
 import os
 import boto3
 
+'''You can configure the AWS access login credentials by uncommenting  the below code
+or you can use the more secure way by using AWS CLI 
+'''
+
+#os.environ["BUCKET_NAME"] = "some_bucket"
+#os.environ["AWS_ACCESS_KEY"] = "some_access_key"
+#os.environ["AWS_SECRET_KEY"] = "some_secret"
+
+
 DAY = datetime.datetime.today().strftime("%d")
 MONTH = datetime.datetime.today().strftime("%m")
 YEAR = datetime.datetime.today().strftime("%Y")
